@@ -3,7 +3,10 @@
 <suite name="Testing Navya Learning">
      <test name="API Testing">
           <classes>
+               <class name="learn.GetPostAPI_NoAuth" />
+               <class name="learn.APITest" />
                <class name="learn.GetPostAPI_OAuth2" />
+               <class name="learn.GetPostAPI_With_API_Key" />
           </classes>
      </test>
 </suite> 

@@ -1,21 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-27T09:44:45 CDT" name="Testing Navya Learning" finished-at="2022-08-27T09:44:48 CDT" duration-ms="2850">
+  <suite started-at="2022-09-06T17:25:50 CDT" name="Testing Navya Learning" finished-at="2022-09-06T17:25:55 CDT" duration-ms="4725">
     <groups>
     </groups>
-    <test started-at="2022-08-27T09:44:45 CDT" name="API Testing" finished-at="2022-08-27T09:44:48 CDT" duration-ms="2850">
+    <test started-at="2022-09-06T17:25:50 CDT" name="API Testing" finished-at="2022-09-06T17:25:55 CDT" duration-ms="4725">
       <class name="learn.GetPostAPI_OAuth2">
-        <test-method signature="test()[pri:1, instance:learn.GetPostAPI_OAuth2@b7f23d9]" started-at="2022-08-27T09:44:45 CDT" name="test" finished-at="2022-08-27T09:44:47 CDT" duration-ms="1857" status="PASS">
+        <test-method signature="test()[pri:1, instance:learn.GetPostAPI_OAuth2@35fc6dc4]" started-at="2022-09-06T17:25:53 CDT" name="test" finished-at="2022-09-06T17:25:54 CDT" duration-ms="786" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method signature="postRequest()[pri:2, instance:learn.GetPostAPI_OAuth2@b7f23d9]" started-at="2022-08-27T09:44:47 CDT" name="postRequest" finished-at="2022-08-27T09:44:48 CDT" duration-ms="975" status="PASS">
+        <test-method signature="postRequest()[pri:2, instance:learn.GetPostAPI_OAuth2@35fc6dc4]" started-at="2022-09-06T17:25:54 CDT" name="postRequest" finished-at="2022-09-06T17:25:55 CDT" duration-ms="628" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postRequest -->
       </class> <!-- learn.GetPostAPI_OAuth2 -->
+      <class name="learn.GetPostAPI_NoAuth">
+        <test-method signature="test()[pri:1, instance:learn.GetPostAPI_NoAuth@4d339552]" started-at="2022-09-06T17:25:50 CDT" name="test" finished-at="2022-09-06T17:25:51 CDT" duration-ms="1039" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method signature="postRequest()[pri:2, instance:learn.GetPostAPI_NoAuth@4d339552]" started-at="2022-09-06T17:25:51 CDT" name="postRequest" finished-at="2022-09-06T17:25:52 CDT" duration-ms="309" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postRequest -->
+      </class> <!-- learn.GetPostAPI_NoAuth -->
+      <class name="learn.GetPostAPI_With_API_Key">
+        <test-method signature="test()[pri:1, instance:learn.GetPostAPI_With_API_Key@7fe8ea47]" started-at="2022-09-06T17:25:55 CDT" name="test" finished-at="2022-09-06T17:25:55 CDT" duration-ms="310" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method signature="postRequest()[pri:2, instance:learn.GetPostAPI_With_API_Key@7fe8ea47]" started-at="2022-09-06T17:25:55 CDT" name="postRequest" finished-at="2022-09-06T17:25:55 CDT" duration-ms="310" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postRequest -->
+      </class> <!-- learn.GetPostAPI_With_API_Key -->
+      <class name="learn.APITest">
+        <test-method signature="test()[pri:1, instance:learn.APITest@77e4c80f]" started-at="2022-09-06T17:25:52 CDT" name="test" finished-at="2022-09-06T17:25:52 CDT" duration-ms="239" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method signature="postRequest()[pri:2, instance:learn.APITest@77e4c80f]" started-at="2022-09-06T17:25:52 CDT" name="postRequest" finished-at="2022-09-06T17:25:53 CDT" duration-ms="542" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postRequest -->
+        <test-method signature="putRequest()[pri:3, instance:learn.APITest@77e4c80f]" started-at="2022-09-06T17:25:53 CDT" name="putRequest" finished-at="2022-09-06T17:25:53 CDT" duration-ms="542" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- putRequest -->
+      </class> <!-- learn.APITest -->
     </test> <!-- API Testing -->
   </suite> <!-- Testing Navya Learning -->
 </testng-results>
