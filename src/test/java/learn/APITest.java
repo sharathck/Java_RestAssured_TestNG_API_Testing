@@ -10,7 +10,12 @@ public class APITest {
 	@Test(priority = 1)
 	public void test() {
         System.out.println("API Testing Java Class " );
-		
+		String nameofCurrentClass = new Object() {
+        }.getClass().getEnclosingClass().getName();
+        String nameofCurrentMethod = new Object() {
+        }.getClass().getEnclosingMethod().getName();
+        System.out.println("Class - > method:    " + nameofCurrentClass + " -> " + nameofCurrentMethod);
+ 	
 		Response response = RestAssured.given().contentType("application/json").get("https://reqres.in/api/users?page=2");
 		response.then().log().all();
 		Assert.assertEquals(response.getStatusCode(), 200);
@@ -25,7 +30,12 @@ public class APITest {
 	@Test(priority = 2)
 	//post request to reqres.in api to create user using RestAssured	
 	public void postRequest() {
-		   // use org.json JSONObject to define your json
+		String nameofCurrentClass = new Object() {
+        }.getClass().getEnclosingClass().getName();
+        String nameofCurrentMethod = new Object() {
+        }.getClass().getEnclosingMethod().getName();
+        System.out.println("Class - > method:    " + nameofCurrentClass + " -> " + nameofCurrentMethod);
+ 	   // use org.json JSONObject to define your json
 		   JSONObject jsonObj = new JSONObject()
 		   .put("name","s1harath")
 		   .put("job","software engineer");
@@ -46,7 +56,12 @@ public class APITest {
 	@Test(priority = 3)
 	//put request to reqres.in api to update user using RestAssured
 	public void putRequest() {
-		   // use org.json JSONObject to define your json
+		String nameofCurrentClass = new Object() {
+        }.getClass().getEnclosingClass().getName();
+        String nameofCurrentMethod = new Object() {
+        }.getClass().getEnclosingMethod().getName();
+        System.out.println("Class - > method:    " + nameofCurrentClass + " -> " + nameofCurrentMethod);
+ 	   // use org.json JSONObject to define your json
 		   JSONObject jsonObj = new JSONObject()
 		   .put("name","chandra")
 		   .put("job","software engineer");

@@ -9,7 +9,12 @@ public class GetPostAPI_With_API_Key {
     
 	@Test(priority = 1)
 	public void test() {
-        System.out.println("API Testing Java Class " );
+		String nameofCurrentClass = new Object() {
+        }.getClass().getEnclosingClass().getName();
+        String nameofCurrentMethod = new Object() {
+        }.getClass().getEnclosingMethod().getName();
+        System.out.println("Class - > method:    " + nameofCurrentClass + " -> " + nameofCurrentMethod);
+       System.out.println("API Testing Java Class " );
 		Response response = RestAssured.given()
 		.header("x-api-key", "qMBuquaJ9O9zKD9KCgmyh9Pief9uWqJraZP7r37E")
 		.contentType("application/json").get("https://7j82vdkse8.execute-api.us-east-1.amazonaws.com/prd/?name=Sharath&city=Houston");
@@ -26,6 +31,11 @@ public class GetPostAPI_With_API_Key {
 	@Test(priority = 2)
 	//post request to reqres.in api to create user using RestAssured	
 	public void postRequest() {
+		String nameofCurrentClass = new Object() {
+        }.getClass().getEnclosingClass().getName();
+        String nameofCurrentMethod = new Object() {
+        }.getClass().getEnclosingMethod().getName();
+        System.out.println("Class - > method:    " + nameofCurrentClass + " -> " + nameofCurrentMethod);
 		   // use org.json JSONObject to define your json
 		   JSONObject jsonObj = new JSONObject()
 		   .put("name","Aarush Kammari")
