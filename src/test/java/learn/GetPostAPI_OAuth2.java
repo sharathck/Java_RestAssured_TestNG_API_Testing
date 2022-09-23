@@ -7,6 +7,7 @@ import org.json.JSONObject;
 import org.testng.Assert;
 public class GetPostAPI_OAuth2 {
 	public String getAccessToken() {
+		System.out.println("[package.]Class.methodName   :   " + this.getClass().getName() + ".'" + new Throwable().getStackTrace()[0].getMethodName()); 
 		String aToken = "";
 		String cliendID = "1ar0cs57e1k46919a78qlqs4cb";
 		String clientSecret = "1llkotvdre5v92nd3s4up20pum3a7775atpiha12sqk0c7l2f72k";
@@ -26,12 +27,8 @@ public class GetPostAPI_OAuth2 {
       
 	@Test(priority = 1)
 	public void test() {
-		String nameofCurrentClass = new Object() {
-        }.getClass().getEnclosingClass().getName();
-        String nameofCurrentMethod = new Object() {
-        }.getClass().getEnclosingMethod().getName();
-        System.out.println("Class - > method:    " + nameofCurrentClass + " -> " + nameofCurrentMethod);
-	String accessToken = getAccessToken();
+		System.out.println("[package.]Class.methodName   :   " + this.getClass().getName() + ".'" + new Throwable().getStackTrace()[0].getMethodName()); 
+ 	String accessToken = getAccessToken();
         //System.out.println(" accessToken : " + accessToken);
 		Response response = RestAssured.given()
 		.header("authorization", " Bearer " + accessToken)
@@ -50,11 +47,7 @@ public class GetPostAPI_OAuth2 {
 	@Test(priority = 2)
 	//post request to reqres.in api to create user using RestAssured	
 	public void postRequest() {
-		String nameofCurrentClass = new Object() {
-        }.getClass().getEnclosingClass().getName();
-        String nameofCurrentMethod = new Object() {
-        }.getClass().getEnclosingMethod().getName();
-        System.out.println("Class - > method:    " + nameofCurrentClass + " -> " + nameofCurrentMethod);
+		System.out.println("[package.]Class.methodName   :   " + this.getClass().getName() + ".'" + new Throwable().getStackTrace()[0].getMethodName()); 
 	String accessToken = getAccessToken();
 		   // use org.json JSONObject to define your json
 		   JSONObject jsonObj = new JSONObject()
